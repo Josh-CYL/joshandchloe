@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <link rel=stylesheet type="text/css" href="hide square.css">
+<style  type="text/css">
+body{
+    /*https://i.imgur.com/3q3vl2D.jpg*/
+    background-image: url("https://i.imgur.com/3q3vl2D.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+@media only screen and (max-width: 900px){
+  .bg{
+    width: 100%;
+    position: absolute;
+  }
+  .translucent{
+    /*
+    padding: 0;
+    margin: 0;
+    */
+    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 50px;
+    display: block;
+    width: 90%;
+    height: 30rem;
+    margin: 0 auto;
+  }
+  padding{
+      padding: 5%;
+  }
+}
+@media only screen and (min-width: 901px){
+  .bg{
+    width: 100%;
+    position: absolute;
+  }
+  .translucent{
+    background-color: rgba(240, 255, 255, 0.5);
+    border-radius: 50px;
+    display: block;
+    width: 50%;
+    height: 30rem;
+    margin: 0 auto;
+  }
+  .padding{
+      padding: 5%;
+  }
+}
+</style>
+<script language="JavaScript">
+function Login(){ 
+    var done=0; 
+    var username=document.login.username.value; 
+    username=username.toLowerCase(); 
+    var password=document.login.password.value; 
+    password=password.toLowerCase(); 
+        if ((username=="chloe" && password=="0817")||(username=="josh"&&password=="1025")) {
+            window.location="main.html"; done=1; 
+        } 
+        if (done==0) {
+            alert("帳號或密碼錯誤");
+        } 
+    }
+</script>
+
+</head>
+<body BGPROPERTIES="FIXED">
+
+<!--<font size="10%"></font>-->
+<div class="bg"></div>
+<div class="padding"></div>
+<div class="translucent">
+    <center>
+    <form name="login">
+    <table border="0px" cellpadding="5" style="width:100%;" valign="middle">
+    <tbody align="left">
+    <tr>
+    <td colspan="2" height=100><center><font size="7" face="malgun gothic"><H2>Login</H2></font></center></td>
+    </tr>
+    
+    <tr>
+    <td width=50% height=100 align=center><font size="6" face="微軟正黑體">帳號 </font><span style="font-family: Times New Roman; font-size: x-large;"><input name="username" type="text"/></span></td>
+    </tr>
+    
+    <tr>
+    <td align=center height=100><font size="6" face="微軟正黑體">密碼</font>
+    
+    <span style="font-family: Times New Roman; font-size: x-large;"><input name="password" type="password" /></span></td>
+    </tr>
+    
+    <tr>
+    <td align="center" colspan="2" height=100><span style="font-family: Times New Roman; font-size: x-large;"><span style="white-space: normal;"><input onclick="Login()" type="button" value=" 登入 "/></span></span></td>
+    </tr>
+    </tbody>
+    </table>
+    </form>
+    </center>
+</div>
+</body>
+</html>
