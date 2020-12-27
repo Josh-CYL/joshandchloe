@@ -1,23 +1,20 @@
-$ git init
-Initialized empty Git repository github.com/lovelycream/joshandchloe/
+### Let's make a burger, HTML響應式網頁
+---
+> 作者<br>
+> 新北市立新北高中21303李尚恩<br>
+> 新北市立新北高中21307李俊逸<br>
+> 新北市立新北高中21325劉俊廷
 
-$ git add README.md
+### 內文
+---
+> 網站網址https://Josh-CYL.github.io/project/<br>
+> [index.html](https://ntshtutorial.github.io/project/index.html)<br>
+> [main.html](https://ntshtutorial.github.io/project/main.html)<br>
+> [style.css](https://ntshtutorial.github.io/project/style.css)
 
-$ git commit -m "first commit"
-[master (root-commit) adc1a5a] first commit
- 1 file changed, 1 insertion(+)
- create mode 100644 README.md
- 
-$ git remote add origin git@github.com:kaochenlong/practice-git.git
+### 參考資料
+---
+- 響應式網站概念參考
+- markdown語法參考 <https://markdown.tw/>
+- cubic-bezier()參考 <https://www.w3schools.com/cssref/func_cubic-bezier.asp>
 
-$ git remote add dragonball git@github.com:kaochenlong/practice-git.git
-
-$ git push -u origin master
-Counting objects: 3, done.
-Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To github.com:kaochenlong/practice-git.git
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
-
-$ git push dragonball cat
